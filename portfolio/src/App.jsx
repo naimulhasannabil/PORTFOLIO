@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -34,7 +35,11 @@ function App() {
   return (
     <div className='min-h-screen bg-gray-50'>
       <Header activeSection={activeSection} scrollToSection={scrollToSection} />
-      <main></main>
+      <main>
+        <section id='home'>
+          <Hero scrollToSection={scrollToSection} />
+        </section>
+      </main>
       <Footer />
     </div>
   )
