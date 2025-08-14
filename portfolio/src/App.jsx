@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -46,6 +47,9 @@ function App() {
         </section>
         <section id='skills'>
           <Skills />
+        </section>
+        <section id='projects'>
+          <Projects />
         </section>
       </main>
       <Footer />
