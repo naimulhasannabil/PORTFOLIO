@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import About from './components/About';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -38,6 +39,9 @@ function App() {
       <main>
         <section id='home'>
           <Hero scrollToSection={scrollToSection} />
+        </section>
+        <section id='about'>
+          <About />
         </section>
       </main>
       <Footer />
