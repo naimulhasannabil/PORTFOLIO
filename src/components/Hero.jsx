@@ -1,4 +1,4 @@
-import profileImage from "../assets/DSC_9724-02-02.jpeg";
+import profileImage from "../assets/DSC_9724-02-01.jpg";
 const Hero = ({ scrollToSection }) => {
     return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-primary-50 pt-16">
@@ -9,7 +9,7 @@ const Hero = ({ scrollToSection }) => {
                 <img
                 src={profileImage}
                 alt="Naimul Hasan Nabil"
-                className="w-48 h-48 rounded-full mx-auto shadow-2xl animate-float"
+                className="w-40 h-48 rounded-full mx-auto shadow-2xl animate-float object-cover"
                 />
             </div>
 
